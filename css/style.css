@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200;400;500;600&display=swap');
+
+
+
+/* All the general styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;;
+    text-decoration: none;
+}
+body {
+    font-size: 18px;
+    font-family: 'Rokkitt', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.section {
+    background-color: #b5b5b8;
+    display: block;
+    min-height: 100vh; /* Viewable screen height*/
+}
+
+
+
+.content-container {
+padding-left: 280px;
+}
+/* Aside */
+.aside{
+width: 280px;
+background-color:#fdf9ff;
+position: fixed;
+left:0;
+top:0;
+height: 100vh;
+padding: 35px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    padding: 30px 10px 10px 5px;
+    background-color: transparent;
+}
+.logo a {
+    font-size: 42px;
+    font-family: "Rokkitt", sans-serif;
+    font-weight: 600;
+    color: #151515;
+}
+.logo a::before{
+    margin-right: 10px;
+    content: "<";
+    height: 30px;
+    width: 15px;
+}
+
+.logo a::after{
+    margin-left: 10px;
+    content: ">";
+    height: 30px;
+    width: 15px;
+}
+
+.aside .nav-toggle{
+    height: 40px;
+    width: 45px;
+    font-weight: 42ps;
+    position: fixed;
+    left: 215px;
+    top: 20px;
+    border: 1px solid#adadad;
+    border-radius: 15%;
+    /*display: -ms-flexbox;
+    display: flex;*/
+    display: none;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+}
+
+.aside .nav-toggle span {
+height: 2px;
+width: 19px;
+display: inline-block;
+position: relative;
+}
+
+
+.aside .nav-toggle span::before{
+    content: "";
+    height: 2px;
+    width: 19px;
+    position: absolute;
+    top: -6px;
+
+}
+
+.aside .nav-toggle span::after{
+    content: "";
+    height: 2px;
+    width: 19px;
+    position: absolute;
+    top: 6px;
+
+}
+
+.aside .nav {    
+    margin: 85px 0;
+    
+}
+
+.aside .nav ul{
+    list-style: none;
+}
+
+.aside .nav ul li {
+    display: block;
+    border-bottom: solid 1px rgb(206, 204, 204);
+}
+
+
+.aside .nav ul li a {
+    color: #151515;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 46px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+
+.aside .nav ul li a:not(.active):hover{
+    padding-left: 5px;
+}
+
+.aside .nav i {
+    padding-right: 5px;
+}
+
+.aside .copy-right {
+    font-size: 15px;
+    font-style: italic;
+    color: #7d7d7b;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+/* Home*/
