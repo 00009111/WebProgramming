@@ -173,7 +173,12 @@ position: relative;
     border: 15px solid white;
     border-radius: 50%;
     display: block;
-     
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+ }
+ .home img:hover{
+    transform: scale(1.05);
+     box-shadow: 0 0 20px gray;
  }
 
  .home .info h1{
