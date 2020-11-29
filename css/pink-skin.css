@@ -1,0 +1,26 @@
+:root {
+    --main-color:  #f12342
+}
+.logo a::before{
+    color: var(--main-color)
+}
+
+.logo a::after{
+    color: var(--main-color)
+}
+
+.nav ul li a:hover,
+.nav li a:active{
+    color: var(--main-color);
+}
+.active {
+    color: var(--main-color) !important;
+}
+.aside .nav-toggle span,
+.aside .nav-toggle span::before,
+.aside .nav-toggle span::after{
+    background-color:  var(--main-color);
+}
+.home .media a {
+    background-color: var(--main-color);
+}
