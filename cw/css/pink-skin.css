@@ -1,6 +1,10 @@
 :root {
     --main-color:  #f12342
 }
+
+.section-title {
+    color: var(--main-color);
+}
 .logo a::before{
     color: var(--main-color)
 }
@@ -22,5 +26,18 @@
     background-color:  var(--main-color);
 }
 .home .media a {
+    background-color: var(--main-color);
+}
+
+.about_button {
+    background-color: var(--main-color);
+}
+
+.about .percent_line {
+    background-color: var(--main-color) !important;
+}
+
+.about .timeline .line,
+.about .timeline .circle{
     background-color: var(--main-color);
 }
