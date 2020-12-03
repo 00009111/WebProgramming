@@ -23,7 +23,11 @@ body {
     background-color: #eaeaec;
     display: block;
     min-height: 100vh; /* Viewable screen height*/
-    padding: 30px
+    padding: 30px;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
 }
 .section-title {
     font-family: "Rokkitt", sans-serif;
@@ -251,7 +255,6 @@ position: relative;
      display: flex;
      flex-direction: row;
      color: #151515;
-    font-size: 20px;
     font-weight: 500;
     line-height: 46px;
     transition: all 0.3s ease;
@@ -378,13 +381,7 @@ position: relative;
 }
 /*----------------------------------------------------------------------------------------------------------------*/
 /*Blog Page Here*/
-.blog{
-    min-height: 100vh;
-    justify-content: center;
-    -ms-flex-pack: center;
-    align-items: center;
-    -ms-flex-align: center;
-}
+
 
 .blog .blog-row{
     margin-top: 30px;
@@ -467,3 +464,42 @@ position: relative;
     padding-top: 12px;
 }
 
+/*-------------------------------------------------------------------------------------*/
+/*Services Section*/
+.services .services-grid{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 30px;
+    padding: 30px;                    
+    justify-content: space-evenly;
+}
+
+.services-grid >.service-box{
+    height: 245px;
+    width: 100%;
+    background-color: #eaeaec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(119, 116, 116);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.services-grid >.service-box:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.services i{
+    margin: 40px;
+    transform: scale(2);
+    justify-self: center;
+}
+
+.services .text{
+    color: #6d6d6b;
+}
