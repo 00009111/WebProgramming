@@ -51,3 +51,7 @@
 
 .blog .title:hover{
     color: var(--main-color);}
+
+.services .service-box .fas{
+color: var(--main-color);
+}
