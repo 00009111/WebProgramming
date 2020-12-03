@@ -5,6 +5,9 @@
 .section-title {
     color: var(--main-color);
 }
+.button{
+    background-color: var(--main-color);
+}
 .logo a::before{
     color: var(--main-color)
 }
@@ -41,3 +44,10 @@
 .about .timeline .circle{
     background-color: var(--main-color);
 }
+
+.blog .blog-date{
+    background-color: var(--main-color);
+}
+
+.blog .title:hover{
+    color: var(--main-color);}
