@@ -20,20 +20,37 @@ body {
 }
 
 .section {
-    background-color: #d3d3d4;
+    background-color: #eaeaec;
     display: block;
     min-height: 100vh; /* Viewable screen height*/
+    padding: 30px
 }
+.section-title {
+    font-family: "Rokkitt", sans-serif;
+    font-size: large;
+    font-weight: 700;
 
+}
 
 
 .content-container {
 padding-left: 280px;
 }
+
+.button {
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
 /* Aside */
 .aside{
 width: 280px;
-background-color:#fdf9ff;
+background-color:#f6f3f7f6;
 position: fixed;
 left:0;
 top:0;
@@ -58,6 +75,8 @@ padding: 35px;
     content: "<";
     height: 30px;
     width: 15px;
+    color: black; /*Color that will apply when
+    skins are off (black-and -white skin)*/
 }
 
 .logo a::after{
@@ -65,6 +84,7 @@ padding: 35px;
     content: ">";
     height: 30px;
     width: 15px;
+    color: black;
 }
 
 .aside .nav-toggle{
@@ -212,4 +232,141 @@ position: relative;
     opacity: 0.6;;
  }
 
+ /*---------------------------------------------_-----------------------------------*/
+
+ /*About Section*/
+
+ .about_grid {
+     display: flex;
+     flex-direction: row;
+     color: #151515;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 46px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+ }
  
+ .about_me{
+     width: 33%;
+     display: inline;
+     margin-top: 30px;
+ }
+.about_contact{
+    width: 33%;
+    margin-top: 30px;
+    
+}
+.about__line{
+    font-weight: 100;
+}
+.about_skills{
+    display:flex;
+
+}
+
+.about__line{
+    width: 80%;
+    display: block;
+    border-bottom: solid 1px rgb(206, 204, 204);
+}
+.about__line a {
+    color: black;
+}
+
+.about_button {
+    -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.about_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(180, 176, 176);
+}
+.about_button a {
+    color: white;
+}
+
+.about_skills{
+   width: 34%;
+   display: flex;
+   flex-direction: column;
+}
+.about .skill {
+    width: 90%;
+    margin-top: 10px;
+}
+.about .percent_num {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    font-size: 16px;
+
+}
+.about .skill .percent_line{
+    height: 6px;
+    border-radius: 2px;
+    z-index: 1;
+    position: absolute;
+}
+.about .skill .line {
+    content: "";
+    height:6px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left:0;
+    top: 0;
+}
+
+.about .timeline{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+
+.about .study-timeline,
+.about .experience-timeline{
+    margin: 20px;
+    padding: 30px 30px 60px 60px;
+    width: 50%;
+    border: 2px solid rgb(172, 168, 168);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(119, 116, 116);
+}
+
+.timeline_row {
+    margin-top: 30px;
+    position: relative;
+}
+.timeline .title{
+    font-weight: 500;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: -45px;
+}
+.line{
+    height: 109%;
+    width: 2px;
+    position: absolute;
+    top: 20px;
+    left: -36px;
+}
+
+.time{
+    color: #6d6d6b;
+}
+.text{
+    color: rgb(8, 8, 8);
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+
