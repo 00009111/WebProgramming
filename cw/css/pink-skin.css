@@ -54,3 +54,10 @@
 .contacts-box > .fas{
 color: var(--main-color);
 }
+
+.p-active{
+    color: var(--main-color);
+}
+.p-active::after{
+    background-color: var(--main-color);
+}
