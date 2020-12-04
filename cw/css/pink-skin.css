@@ -2,9 +2,7 @@
     --main-color:  #f12342
 }
 
-.section-title {
-    color: var(--main-color);
-}
+
 .button{
     background-color: var(--main-color);
 }
@@ -52,6 +50,7 @@
 .blog .title:hover{
     color: var(--main-color);}
 
-.services .service-box .fas{
+.services .service-box .fas,
+.contacts-box > .fas{
 color: var(--main-color);
 }
