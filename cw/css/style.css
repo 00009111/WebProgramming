@@ -781,6 +781,13 @@ position: relative;
     .aside{
         left:-277px
     }
+    .logo {
+        margin: auto;
+        height: 40px;
+    }
+    .aside .nav{
+        margin: 55px 0;
+    }
     .aside .nav-toggle{
         display: -ms-flexbox;
         display: flex;
