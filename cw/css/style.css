@@ -767,7 +767,8 @@ position: relative;
     }
 
     .aside{
-        left:-277px
+        left:-277px;
+        min-height: 100vh;
     }
     .logo {
         margin: auto;
