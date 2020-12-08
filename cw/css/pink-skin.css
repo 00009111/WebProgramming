@@ -47,6 +47,7 @@
     background-color: var(--main-color);
 }
 
+
 .blog .title:hover{
     color: var(--main-color);}
 
@@ -55,9 +56,12 @@
 color: var(--main-color);
 }
 
+
+.slideshow-controls .prev-item .fas,
+.slideshow-controls .next-item .fas,
 .p-active{
     color: var(--main-color);
 }
 .p-active::after{
-    background-color: var(--main-color);
+    background-color: var(--main-color)c;
 }
