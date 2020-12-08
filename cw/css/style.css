@@ -490,7 +490,7 @@ position: relative;
 }
 
 .services-grid >.service-box{
-    height: 245px;
+    height: auto;
     width: 100%;
     background-color: #eaeaec;
     border-radius: 10px;
@@ -536,7 +536,7 @@ position: relative;
     margin: 15px;
 }
 
-.p-active::after{
+.portfolio .p-active::after{
     content: '';
     width: 105%;
     height: 3px;
@@ -545,7 +545,7 @@ position: relative;
     top: 26px;
     left: -2px;
 }
-.photography{
+.portfolio .photography{
     width: 100%;
     height: 70vh;
     display: flex;
@@ -570,6 +570,7 @@ position: relative;
     border: 5px solid white;
     position: relative;
 }
+
 .portfolio  .grid-box:hover img{
     opacity: 0.3;
 
