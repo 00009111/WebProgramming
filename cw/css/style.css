@@ -786,7 +786,7 @@ position: relative;
         height: 40px;
     }
     .aside .nav{
-        margin: 55px 0;
+        margin: 55px 0 10px;
     }
     .aside .nav-toggle{
         display: -ms-flexbox;
