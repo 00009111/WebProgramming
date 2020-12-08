@@ -803,9 +803,11 @@ position: relative;
     }
     .about_me,
     .about_contact,
-    .about .button,
     .about_skills{
         width: 100%;
+    }
+    .about .button{
+        width: 80%;
     }
     .about_me,
     .about_contact{
@@ -827,6 +829,9 @@ position: relative;
     margin-left: 0;}
     .blog .blog-date{
         top: 170px;
+    }
+    .blog .button{
+        width: 80%;
     }
     .services .services-grid{
         display: block;
