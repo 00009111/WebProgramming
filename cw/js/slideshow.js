@@ -3,13 +3,12 @@ var totalItems = items.length;
 const slideshowBox = document.getElementsByClassName("slideshow")[0];
 var slideshowImage = document.getElementById("slideshow-image");
 var captionCounter = document.getElementsByClassName("caption-counter")[0];
+var captionText = document.getElementsByClassName("caption-text")[0];
 var closeSlideshow = document.getElementsByClassName("slideshow-close")[0];
 var prevItem = document.getElementsByClassName("prev-item")[0];
 var nextItem = document.getElementsByClassName("next-item")[0];
 
-console.log(items);
-console.log(slideshowImage.innerHTML);
-console.log(items[0].children[0].src);
+
 
 function imageshowing(num){
     var total = document.querySelectorAll(`.grid-box:not(.none)`).length;
@@ -22,6 +21,13 @@ function imageshowing(num){
         count=num+1;
     }else{
         count= num-total+1;
+    }
+
+    if(items[num].classList.contains("photo-d")){
+        captionText.innerHTML = "Photography";
+    }
+    else{
+        captionText.innerHTML= "Web Design";
     }
     
     captionCounter.innerHTML = count +" of "+ total;
