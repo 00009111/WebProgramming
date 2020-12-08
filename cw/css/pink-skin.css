@@ -47,10 +47,21 @@
     background-color: var(--main-color);
 }
 
+
 .blog .title:hover{
     color: var(--main-color);}
 
 .services .service-box .fas,
 .contacts-box > .fas{
 color: var(--main-color);
+}
+
+
+.slideshow-controls .prev-item .fas,
+.slideshow-controls .next-item .fas,
+.p-active{
+    color: var(--main-color);
+}
+.p-active::after{
+    background-color: var(--main-color)c;
 }
