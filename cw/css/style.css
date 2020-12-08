@@ -434,19 +434,7 @@ position: relative;
     bottom: 20px;
     right: 30px;
 }
-.blog-icons{
-    display: none;
-    position: absolute;
-    top: 439px;
-    right: 77px;
-}
-.blog-icons i{
-    margin-left: 20px;
-}
-.blog-icons i:hover{
-    cursor: pointer;
-    opacity: 0.7;
-}
+
 .fa-share,
 .fa-heart{
     color: rgb(119, 116, 116);
@@ -840,6 +828,7 @@ position: relative;
     .blog .button{
         width: 80%;
     }
+    
     .services .services-grid{
         display: block;
     }
