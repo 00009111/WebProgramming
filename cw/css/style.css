@@ -86,7 +86,6 @@ body {
 	left: 0;
 	top: 0;
 	min-height: 100vh;
-	max-height: 130vh;
 	padding: 35px;
 	z-index: 10;
 }
