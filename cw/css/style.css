@@ -264,11 +264,14 @@ position: relative;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
  }
-
+ 
  .home .media a:hover{
     opacity: 0.6;;
  }
 
+ .home .button{
+     line-height: 50px;
+ }
  /*---------------------------------------------_-----------------------------------*/
 
  /*About Section*/
