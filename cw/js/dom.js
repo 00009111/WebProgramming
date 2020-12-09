@@ -22,6 +22,42 @@ document.querySelectorAll('.blog-box').forEach(function(e) {
 });
 
 
+//DOM-table creator
+function createTable() {
+	// get the reference for the body
+	var domTable = document.getElementById("dom-table");
+  
+	// create <table> element and a <tbody> element
+	var tbl = document.createElement("table");
+	var tblBody = document.createElement("tbody");
+  
+	// creat all cells
+	for (var i = 0; i < 2; i++) {
+	  // create a table row
+	  var row = document.createElement("tr");
+  
+	  for (var j = 0; j < 2; j++) {
+		// Create a <td> element and a text node, make the text
+		// node the contents of the <td>
+		var cell = document.createElement("td");
+		var cellText = document.createTextNode("cell in row "+i+", column "+j);
+		cell.appendChild(cellText);
+		row.appendChild(cell);
+	  }
+  
+	  // add the row to the end of the table body
+	  tblBody.appendChild(row);
+	}
+  
+	// put the <tbody> in the <table>
+	tbl.appendChild(tblBody);
+	// append <table> into <body>
+	domTable.appendChild(tbl);
+	// border attribute  to 2;
+	tbl.setAttribute("border", "2");
+  }
+
+
 //DOM events and JS functions for Portfolio page
 
 var itemAll = document.getElementById("i-all");
