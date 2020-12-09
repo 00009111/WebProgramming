@@ -217,7 +217,7 @@ body {
 	font-style: italic;
 	color: #7d7d7b;
 	position: absolute;
-	bottom: 10px;
+	bottom: 30px;
 }
 
 
@@ -862,7 +862,7 @@ textarea {
 		height: 40px;
 	}
 	.aside .nav {
-		margin: 55px 0 10px;
+		margin: 25px 0 10px;
 	}
 	.aside .nav-toggle {
 		display: -ms-flexbox;
@@ -969,6 +969,9 @@ textarea {
 @media (min-width: 481px) and (max-width:767px) {
 	.aside {
 		left: -277px
+	}
+	.aside .nav{
+		margin: 35px 0;
 	}
 	.aside .nav-toggle {
 		display: -ms-flexbox;
