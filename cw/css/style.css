@@ -835,7 +835,11 @@ textarea {
 	.section-title {
 		margin-left: 25px;
 		font-size: 28px;
-	}
+    }
+    .button:hover{
+        transform: none;
+        opacity: 0.7;
+    }
 	.aside {
 		left: -277px;
 		min-height: 100vh;
@@ -933,19 +937,16 @@ textarea {
 	.contacts-top>.contacts-box {
 		height: auto;
 	}
+    .contacts .row {
+        flex-direction: column;
+    }
+    .tbx-name input,
+    .tbx-email input,
+    .subject,
+    textarea {
+        width: 95%;
+    }
 }
-
-.contacts .row {
-	flex-direction: column;
-}
-
-.tbx-name input,
-.tbx-email input,
-.subject,
-textarea {
-	width: 95%;
-}
-
 
 /*Smartphone*/
 
@@ -966,7 +967,11 @@ textarea {
 	}
 	.section {
 		margin: 5px;
-	}
+    }
+    .button:hover{
+        transform: none !important;
+        opacity: 0.7;
+    }
 	.about .about_grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
