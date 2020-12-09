@@ -1,35 +1,26 @@
 
 
-
+//JS DOM event for blog page
 
   document.querySelectorAll('.blog-box').forEach(function(e) {
-    e.addEventListener('click', function() {
+    e.addEventListener('click', function() { 
+        //when click event happens on one of the blogs, this function happens:
         
         var area = document.getElementById("area");
-        area.innerHTML= this.innerHTML;
+        area.innerHTML= this.innerHTML; //grabbing the div with id Area
         
         
         var linkToText = document.getElementsByClassName("read-more")[0];
         var dateLabel = document.getElementsByClassName("blog-date")[0];
-        var iconsLabel = document.getElementsByClassName("blog-icons")[0];
         var fullText = document.getElementsByClassName("invisible")[0];
 
-        linkToText.style.display = "none";
-        fullText.style.display = 'inline';
-        dateLabel.style.display = "none";
-        iconsLabel.style.display = "inline";
+        linkToText.style.display = "none";//read-more link will not be displayed
+        fullText.style.display = 'inline';//invisible content becomes visible
+        dateLabel.style.display = "none";//date label will not be
 
         
          });
-        document.getElementsByClassName("fa-heart")[0].addEventListener('click', function() {
-        if(this.style.color=="red"){//if color red, it chanes to red
-            this.style.color = "rgb(119, 116, 116)";//Changes the color of .this (clicked icon)
-        }
-        else{
-            this.style.color="red"//if color is white, it changes to red  
-        }
-      
-    })
+       
         });
   
     
