@@ -7,59 +7,56 @@ var captionText = document.getElementsByClassName("caption-text")[0];
 var closeSlideshow = document.getElementsByClassName("slideshow-close")[0];
 var prevItem = document.getElementsByClassName("prev-item")[0];
 var nextItem = document.getElementsByClassName("next-item")[0];
+let count;
 
 
+function imageshowing(num) {
+	var total = document.querySelectorAll(".grid-box:not(.none)").length;
+	var imgSrc = items[num].children[0].src;
+	slideshowBox.classList.remove("none");
+	slideshowImage.innerHTML = "<img src='" + imgSrc + "' />";
+	console.log(num);
+	console.log(total - 1);
+	if (num <= total - 1) {
+		count = num + 1;
+	} else {
+		count = num - total + 1;
+	}
 
-function imageshowing(num){
-    var total = document.querySelectorAll(`.grid-box:not(.none)`).length;
-    var imgSrc = items[num].children[0].src
-    slideshowBox.classList.remove("none");
-    slideshowImage.innerHTML = "<img src='"+imgSrc+"' />";
-    console.log(num);
-    console.log(total-1);
-    if (num<=total-1){
-        count=num+1;
-    }else{
-        count= num-total+1;
-    }
+	if (items[num].classList.contains("photo-d")) {
+		captionText.innerHTML = "Photography";
+	} else {
+		captionText.innerHTML = "Web Design";
+	}
 
-    if(items[num].classList.contains("photo-d")){
-        captionText.innerHTML = "Photography";
-    }
-    else{
-        captionText.innerHTML= "Web Design";
-    }
-    
-    captionCounter.innerHTML = count +" of "+ total;
+	captionCounter.innerHTML = count + " of " + total;
 }
 
-    for(let i=0; i<totalItems; i++){
-    items[i].addEventListener("click", function(){
-        imageshowing(i)
-    })
-    
+for (let i = 0; i < totalItems; i++) {
+	items[i].addEventListener("click", function() {
+		imageshowing(i);
+	});
+
 }
 
-closeSlideshow.addEventListener("click", function(){
-    slideshowBox.classList.add("none");
-})
-prevItem.addEventListener("click", function(){
-    count=count-2;
-    if(count>=0){
-        imageshowing(count);
-    }
-    else{
-        imageshowing(document.querySelectorAll(`.grid-box:not(.none)`).length -1)
-    }
-    
-})
-console.log(document.querySelectorAll(`.grid-box:not(.none)`).length)
-nextItem.addEventListener("click", function(){
-    if(count<=document.querySelectorAll(`.grid-box:not(.none)`).length-1){
-        imageshowing(count);
-    }
-    else{
-        console.log(imageshowing(0))
-    }
-    
-})
+closeSlideshow.addEventListener("click", function() {
+	slideshowBox.classList.add("none");
+});
+prevItem.addEventListener("click", function() {
+	count = count - 2;
+	if (count >= 0) {
+		imageshowing(count);
+	} else {
+		imageshowing(document.querySelectorAll(`.grid-box:not(.none)`).length - 1);
+	}
+
+});
+console.log(document.querySelectorAll(`.grid-box:not(.none)`).length);
+nextItem.addEventListener("click", function() {
+	if (count <= document.querySelectorAll(`.grid-box:not(.none)`).length - 1) {
+		imageshowing(count);
+	} else {
+		console.log(imageshowing(0));
+	}
+
+});
