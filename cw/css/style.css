@@ -85,7 +85,8 @@ body {
 	position: fixed;
 	left: 0;
 	top: 0;
-	height: 100vh;
+	min-height: 100vh;
+	max-height: 130vh;
 	padding: 35px;
 	z-index: 10;
 }
@@ -183,7 +184,7 @@ body {
 }
 
 .aside .nav {
-	margin: 85px 0;
+	margin: 65px 0;
 }
 
 .aside .nav ul {
@@ -216,7 +217,8 @@ body {
 	font-size: 15px;
 	font-style: italic;
 	color: #7d7d7b;
-	float: inline-end;
+	position: absolute;
+	bottom: 10px;
 }
 
 
